@@ -2,7 +2,7 @@ import datetime
 import os
 
 def last_operations():
-    print('\n--- ПОСЛЕДНИЕ 5 ОПЕРАЦИЙ ---')
+    print('\n Последние 5 операций')
 
     if os.path.exists("calculator.log"):
         file = open("calculator.log", 'r')
@@ -22,7 +22,7 @@ last_operations()
 
 while True:
     print("\n" + "-" * 30)
-    print("КАЛЬКУЛЯТОР")
+    print("Калькулятор")
     print("-" * 30)
 
     try:
@@ -41,12 +41,12 @@ while True:
             expr = f"{num1} * {num2}"
         elif op == "/":
             if num2 == 0:
-                print("Ошибка: деление на ноль!")
+                print("Ошибка: деление на ноль")
                 continue
             result = num1 / num2
             expr = f"{num1} / {num2}"
         else:
-            print("Неверная операция!")
+            print("Неверная операция")
             continue
 
         print(f"Результат: {expr} = {result}")
